@@ -1,0 +1,29 @@
+.button {
+  background-color: @basic-green;
+  color: @basic-white;
+  width: 192px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-right: 44px;
+  padding-left: 44px;
+  &:hover,
+  &:focus {
+    background-color: @basic-green-2;
+  }
+  &:active {
+    background-color: @basic-green-2;
+    color: rgba(255,255,255,0.3);
+  }
+  &--silver {
+    background-color: @basic-grey;
+    color: @special-dark-grey;
+  }
+  &--silver:hover,
+  &--silver:focus{
+    background-color: @special-grey-2;
+  }
+  &--silver:active {
+    background-color: @special-grey-2;
+    color: rgba(68, 68, 68, 0.3);
+  }
+}
