@@ -1,5 +1,28 @@
 .page-footer {
+  padding: 0 20px;
+
+   @media (min-width: @tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 55px;
+    padding-bottom: 61px;
+  }
+}
+
+.page-footer__wrapper {
   background-color: @basic-grey;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
 }
 
 .page-footer__social {
