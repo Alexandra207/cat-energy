@@ -1,5 +1,12 @@
 .product {
   color: @special-dark-grey-2;
+  border-top: 1px solid @special-grey-2;
+
+  @media (min-width: @tablet-width) {
+    background-color: @basic-grey;
+    border: none;
+    margin: 0;
+  }
 }
 
 .product__title {

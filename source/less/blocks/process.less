@@ -1,10 +1,24 @@
 .process {
   color: @special-dark-grey;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    margin: auto;
+    max-width: 1220px;
+  }
 }
 
 .process__title {
   font-family: "Oswald", "Arial", sans-serif;
   color: @basic-black;
+  margin: 0;
+  margin-top: 27px;
+  margin-bottom: 28px;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
@@ -14,4 +28,22 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 153px;
+    grid-row-gap: 37px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0;
+  }
+}
+
+.process__item {
+  margin: 0;
+  margin-bottom: 20px;
+  width: 256px;
 }

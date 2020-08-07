@@ -5,8 +5,23 @@
   padding-top: 27px;
   padding-left: 20px;
   padding-right: 20px;
+  margin-bottom: 22px;
   position: relative;
-  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    background-image: none;
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    margin: auto;
+    margin-bottom: 82px;
+    max-width: 1220px;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
 }
 
 .introduction__title {
@@ -18,23 +33,45 @@
   margin: 0;
   margin-bottom: 25px;
   color: @basic-white;
+
+  @media (min-width: @tablet-width) {
+    color: @basic-black;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 41px;
+    text-align: left;
+  }
 }
 
 .introduction__slogan {
   color: @basic-white;
-  text-align: center;
+  text-align: left;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    color: @basic-black;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .introduction__form-link {
-  display: inline-block;
+  display: block;
   color: @basic-white;
   text-align: center;
   margin-top: 302px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 49px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 52px;
+  }
 }
 
 .introducton__ilustration {
