@@ -18,22 +18,36 @@
   color: @basic-black;
   margin: 0;
   margin-top: 27px;
-  margin-bottom: 28px;
+  margin-bottom: 38px;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 32px;
+  }
 }
 
 .process__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  //padding-top: 2px;
+  //padding-bottom: 4px;
+  //display: grid;
+  //grid-template-columns: 1fr;
+  padding-left: 80px;
 
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 153px;
     grid-row-gap: 37px;
+    padding-left: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -43,7 +57,91 @@
 }
 
 .process__item {
+  display: block;
   margin: 0;
   margin-bottom: 20px;
-  width: 256px;
+  position: relative;
+  vertical-align: middle;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding-bottom: 57px;
+    padding-top: 151px;
+  }
+
+  &--nutrients::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: -80px;
+    width: 60px;
+    height: 60px;
+    background-color: @basic-green;
+    background-image: url("../img/advantage-leaf@1x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (min-width: @tablet-width) {
+      bottom: 160px;
+      left: 0;
+    }
+  }
+
+  &--powder::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: -80px;
+    width: 60px;
+    height: 60px;
+    background-color: @basic-green;
+    background-image: url("../img/advantage-powder@1x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (min-width: @tablet-width) {
+      bottom: 160px;
+      left: 0;
+    }
+  }
+
+  &--nutrition::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: -80px;
+    width: 60px;
+    height: 60px;
+    background-color: @basic-green;
+    background-image: url("../img/advantage-dining@1x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (min-width: @tablet-width) {
+      bottom: 160px;
+      left: 0;
+    }
+  }
+
+  &--changes::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: -80px;
+    width: 60px;
+    height: 60px;
+    background-color: @basic-green;
+    background-image: url("../img/advantage-leaf@1x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (min-width: @tablet-width) {
+      bottom: 160px;
+      left: 0;
+    }
+  }
 }
