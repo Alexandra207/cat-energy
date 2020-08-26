@@ -1,37 +1,29 @@
 .introduction {
-  @media (max-width: @mobile-width-only) {
-    background-image: url("../img/index-background-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: top center;
-    //background-size: cover;
-    padding-top: 27px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 22px;
-    position: relative;
-  }
+  //background-color: @basic-green;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  //background-position: top center;
+  background-size: 100% auto;
+  padding-top: 27px;
+  //padding-left: 20px;
+  //padding-right: 20px;
+  margin-bottom: 22px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
-    padding: 0 30px;
+    margin-top: 62px;
+    padding: 0;
+    background-image: none;
+    min-height: 810px;
   }
 
   @media (min-width: @desktop-width) {
-    position: relative;
-    margin: auto;
-    margin-bottom: 82px;
+    min-height: auto;
+    padding-left: 80px;
     max-width: 1220px;
-    background-image: url("../img/index-background-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: right;
-
-    &::before {
-      //content: "";
-      //display: block;
-      //position: absolute;
-      background-image: url("../img/index-background-desktop@1x.jpg");
-      background-repeat: no-repeat;
-      background-position: top right;
-    }
+    margin: 0 auto;
+    margin-top: 111px;
+    margin-bottom: 82px;
   }
 }
 
@@ -40,8 +32,9 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+  width: 249px;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 25px;
   color: @basic-white;
 
@@ -49,6 +42,8 @@
     color: @basic-black;
     font-size: 60px;
     line-height: 60px;
+    width: 414px;
+    margin: 0;
     margin-bottom: 41px;
     text-align: left;
   }
@@ -56,7 +51,7 @@
 
 .introduction__slogan {
   color: @basic-white;
-  text-align: left;
+  text-align: center;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
@@ -67,17 +62,30 @@
     color: @basic-black;
     font-size: 20px;
     line-height: 20px;
+    text-align: left;
+    padding-left: 118px;
+    z-index: 10;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
   }
 }
 
 .introduction__form-link {
   display: block;
+  //width: 100%;
+  margin: 0 auto;
   color: @basic-white;
   text-align: center;
-  margin-top: 302px;
+  margin-top: 299px;
 
   @media (min-width: @tablet-width) {
+    width: 244px;
+    margin: 0;
     margin-top: 49px;
+    z-index: 999;
+    font-size: 20px;
   }
 
   @media (min-width: @desktop-width) {
@@ -85,12 +93,24 @@
   }
 }
 
-.introducton__ilustration {
-  @media (max-width: @mobile-width-only) {
+.introduction img {
     display: block;
     position: absolute;
     top: 167px;
     left: 50%;
-    transform: translate(-50%, 0);
-  }
+    transform: translateX(-50%);
+
+    @media (min-width: @tablet-width) {
+      width: 709px;
+      height: 609px;
+      top: 201px;
+      z-index: 1;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 552px;
+      height: 499px;
+      top: 0;
+      //transform: translate(177px);
+    }
 }

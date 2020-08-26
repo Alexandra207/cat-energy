@@ -1,0 +1,45 @@
+.send {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 61px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-gap: 81px;
+  }
+}
+
+.send__required {
+  font-family: Arial, sans-serif;
+  display: block;
+  text-align: center;
+  text-transform: none;
+  margin-top: 21px;
+  margin-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+    margin: 0;
+    align-self: center;
+  }
+}
+
+.send__button {
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    width: 282px;
+    margin: 0;
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 568px;
+  }
+}

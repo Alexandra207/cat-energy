@@ -3,11 +3,12 @@
   color: @special-dark-grey;
   padding-top: 30px;
   padding-bottom: 18px;
-  padding-right: 33px;
+  //padding-right: 33px;
   padding-left: 22px;
   position: relative;
 
   @media (max-width: @mobile-width-only) {
+    //box-sizing: border-box;
     width: 280px;
 
     &::after {
@@ -26,7 +27,13 @@
     padding-top: 77px;
     padding-bottom: 53px;
     padding-left: 52px;
+    //padding-right: 309px;
     margin-bottom: 30px;
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
   }
 }
 
@@ -40,6 +47,35 @@
   margin: 0;
   text-align: center;
   margin-bottom: 29px;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: @basic-green;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    text-align: left;
+    margin-bottom: 24px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 73px;
+    text-align: center;
+  }
 }
 
 .food-programs__link {
@@ -49,6 +85,8 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
+  display: block;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -65,8 +103,28 @@
   }
 }
 
+.food-programs__link-item {
+  position: absolute;
+  width: 24px;
+  height: 12px;
+  top: 50%;
+  left: 48%;
+  transform: translate(-50%, -48%);
+  //transform: translateY(-50%);
+}
 .food-programs__description {
   width: 227px;
   margin: 0;
   margin-bottom: 38px;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 48px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 467px;
+    margin-bottom: 23px;
+  }
 }

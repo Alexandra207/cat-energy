@@ -9,7 +9,11 @@
   <body class="page">
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img src="https://via.placeholder.com/150x150" width="33" height="38" alt="Магазин «Кэт энерджи»">
+        <pictre>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img src="img/logo-mobile.svg" width="191" height="38" alt="Магазин «Кэт энерджи»">
+        </pictre>
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
@@ -25,29 +29,144 @@
       </nav>
     </header>
     <main class="page-main">
+      <div class="container-form">
+        <h1 class="heading-form">Подбор программы</h1>
+        <form class="form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="form__introduction">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          <div class="introduction-and-aim">
+            <fieldset class="form__information information">
+              <ul class="information__list list">
+                <li class="information__item">
+                  <label for="name">Имя:<sup>*</sup></label>
+                  <input type="text" name="cat-name" id="name" placeholder="Барсик" required>
+                </li>
+                <li class="information__item">
+                  <label for="weight">Вес (кг):<sup>*</sup></label>
+                  <input type="text" name="cat-weight" id="weight" placeholder="7" required>
+                </li>
+                <li class="information__item">
+                  <label for="age">Возраст (лет):</label>
+                  <input type="text" name="cat-age" id="age" placeholder="7">
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form__aim aim">
+              <ul class="aim__list list">
+                <li class="aim__item">
+                  <label for="weight-loss">
+                    <input type="radio" name="program" id="weight-loss" value="weight-loss" checked>
+                    <span class="aim__radio"></span>
+                    Похудение
+                  </label>
+                </li>
+                <li class="aim__item">
+                  <label for="weight-gain">
+                    <input type="radio" name="program" id="weight-gain" value="weight-gain">
+                    <span class="aim__radio"></span>
+                    Набор массы
+                  </label>
+                </li>
+                <li class="aim__item">
+                  <label for="no-idea">
+                    <input type="radio" name="program" id="no-idea" value="no-idea">
+                    <span class="aim__radio"></span>
+                    Не знаю (Нужен ваш совет)
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <fieldset class="form__contacts contacts">
+            <legend class="contacts__title legend">Контактные данные (владельца кота)</legend>
+            <ul class="contacts__list list">
+              <li class="contacts__item">
+                <label for="email-name">E-mail:<sup>*</sup></label>
+                <input type="email" placeholder="kuklachev@gmail.com" id="email-name" required>
+              </li>
+              <li class="contacts__item">
+                <label id="tel-number">Телефон:<sup>*</sup></label>
+                <input type="tel" name="tel-owner" id="tel-number" placeholder="8 (960) 900-60-90" required>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__comments comment">
+            <legend class="comment__title legend">Комментарий</legend>
+            <textarea class="comment__area" name="comments" rows="8">Расскажите обо всех повадках кота</textarea>
+          </fieldset>
+          <fieldset class="form__extra extra">
+            <legend class="extra__title legend">Дополнительно</legend>
+            <ul class="extra__list list">
+              <li class="extra__item">
+                <label for="sweetener">
+                  <input type="checkbox" id="sweetener" name="sweetener" checked>
+                  <span class="extra__checkbox"></span>
+                  Сахарозаменитель
+                </label>
+              </li>
+              <li class="extra__item">
+                <label for="water">
+                  <input type="checkbox" id="water" name="portable-water">
+                  <span class="extra__checkbox"></span>
+                  Питьевая вода
+                </label>
+              </li>
+              <li class="extra__item">
+                <label for="milk">
+                  <input type="checkbox" id="milk" name="milk">
+                  <span class="extra__checkbox"></span>
+                  Молоко
+                </label>
+              </li>
+              <li class="extra__item">
+                <label for="vitamin">
+                  <input type="checkbox" id="vitamin" name="vitamins">
+                  <span class="extra__checkbox"></span>
+                  Витамины
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="form__send send">
+            <input class="send__button button" type="submit" value="Отправить заявку">
+            <span class="send__required">* — Обязательные поля</span>
+          </div>
+        </form>
+      </div>
+      <section class="map">
+        <h2 class="visually-hidden">Описание местоположения</h2>
+        <div class="map_location location">
+          <p class="location__dealer">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="location__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+        <picture>
+            <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
+            <img src="img/bg-map-mobile@1x.png" width="320" height="362" alt="Карта с месторасположением Cat Energy. ул. Большая Конюшенная, д. 19/8 Санкт-Петербур">
+        </picture>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="index.html">
-          <img src="https://via.placeholder.com/150x150" width="101" height="18" alt="Магазин «Кэт энерджи»">
+          <img src="img/logo-footer.svg" width="128" height="24" alt="Магазин «Кэт энерджи»">
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="#"><img src="https://via.placeholder.com/150x150" width="22" height="12" alt="Vkontakte"></a>
+              <a class="social__link social__link--vkontakte" href="#"><img src="img/icon-vk.svg" width="23" height="16" alt="Vkontakte"></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="#"><img src="https://via.placeholder.com/150x150" width="16" height="16" alt="Instagram"></a>
+              <a class="social__link social__link--instagram" href="#"><img src="img/icon-insta.svg" width="16" height="16" alt="Instagram"></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="#"><img src="https://via.placeholder.com/150x150" width="10" height="18" alt="Facebook"></a>
+              <a class="social__link social__link--facebook" href="#"><img src="img/icon-fb.svg" width="10" height="18" alt="Facebook"></a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            HTML Academy
-            <img src="https://via.placeholder.com/150x150" width="27" height="34" alt="Логотип HTML Academy">
+            <span>HTML Academy</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="27" height="34"><path fill="#666666" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
           </a>
         </div>
       </div>

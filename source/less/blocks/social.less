@@ -1,17 +1,24 @@
 .social {
-  padding-right: 77px;
-  padding-left: 73px;
+  padding-top: 20px;
+  padding-bottom: 21px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }
 
 .social__list {
+  width: 130px;
+  margin: 0 auto;
+  //text-align: center;
   list-style: none;
   padding: 0;
-  margin: 0;
   display: flex;
-  vertical-align: center;
-  //justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .social__link {
-  display: block;
+
 }

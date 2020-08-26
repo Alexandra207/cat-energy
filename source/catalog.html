@@ -9,7 +9,11 @@
   <body class="page">
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img src="https://via.placeholder.com/150x150" width="33" height="38" alt="Магазин «Кэт энерджи»">
+        <pictre>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img src="img/logo-mobile.svg" width="191" height="38" alt="Магазин «Кэт энерджи»">
+        </pictre>
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
@@ -171,22 +175,34 @@
           </ul>
         </div>
       </section>
+      <section class="map">
+        <h2 class="visually-hidden">Описание местоположения</h2>
+        <div class="map_location location">
+          <p class="location__dealer">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="location__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+        <picture>
+            <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
+            <img src="img/bg-map-mobile@1x.png" width="320" height="362" alt="Карта с месторасположением Cat Energy. ул. Большая Конюшенная, д. 19/8 Санкт-Петербур">
+        </picture>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="index.html">
-          <img src="https://via.placeholder.com/150x150" width="101" height="18" alt="Магазин «Кэт энерджи»">
+          <img src="img/logo-footer.svg" width="128" height="24" alt="Магазин «Кэт энерджи»">
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="#"><img src="https://via.placeholder.com/150x150" width="22" height="12" alt="Vkontakte"></a>
+              <a class="social__link social__link--vkontakte" href="#"><img src="img/icon-vk.svg" width="23" height="16" alt="Vkontakte"></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="#"><img src="https://via.placeholder.com/150x150" width="16" height="16" alt="Instagram"></a>
+              <a class="img/icon-insta.svg" href="#"><img src="img/icon-insta.svg" width="16" height="16" alt="Instagram"></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="#"><img src="https://via.placeholder.com/150x150" width="10" height="18" alt="Facebook"></a>
+              <a class="social__link social__link--facebook" href="#"><img src="img/icon-fb.svg" width="10" height="18" alt="Facebook"></a>
             </li>
           </ul>
         </div>
