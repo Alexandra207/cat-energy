@@ -1,5 +1,5 @@
 .form {
-  font-family: Oswald;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -11,7 +11,7 @@
   }
 }
 
-.form__introduction{
+.form__introduction {
   font-size: 14px;
   width: 226px;
   margin: 0;
@@ -32,14 +32,16 @@
 .form__information {
   border: none;
   padding: 0;
-  margin: 0;
 }
 
 .form__aim {
+  margin-top: 27px;
+  margin-bottom: 26px;
   padding-top: 20px;
   padding-bottom: 22px;
 
   @media (min-width: @tablet-width) {
+    margin-top: 72px;
     margin-bottom: 71px;
     padding-top: 25px;
     padding-bottom: 0;
@@ -54,8 +56,8 @@
 .form__comments {
   margin-top: 27px;
 
-    @media (min-width: @tablet-width) {
-      margin-top: 71px;
+  @media (min-width: @tablet-width) {
+    margin-top: 71px;
   }
 
   @media (min-width: @desktop-width) {
@@ -85,5 +87,13 @@
   @media (min-width: @desktop-width) {
     margin-top: 67px;
     margin-bottom: 61px;
+  }
+}
+
+.form__send {
+  margin-top: 34px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 54px;
   }
 }

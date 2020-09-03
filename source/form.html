@@ -7,34 +7,44 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page">
-    <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <pictre>
-          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img src="img/logo-mobile.svg" width="191" height="38" alt="Магазин «Кэт энерджи»">
-        </pictre>
-      </a>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+    <header class="container-site page-header">
+        <a class="page-header__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg" width="191" height="38" alt="Магазин «Кэт энерджи»">
+          </picture>
+        </a>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a href="index.html">Главная</a></li>
-            <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
-            <li class="site-list__item site-list__item--active"><a>Подбор программы</a></li>
+          <ul class="list main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link"href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link"href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link">Подбор программы</a>
+            </li>
           </ul>
         </div>
       </nav>
     </header>
     <main class="page-main">
-      <div class="container-form">
-        <h1 class="heading-form">Подбор программы</h1>
+      <div>
+        <div class="container-site">
+          <h1 class="title heading-form">Подбор программы</h1>
+        </div>
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="form__introduction">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-          <div class="introduction-and-aim">
-            <fieldset class="form__information information">
+          <div class="form-mobile">
+            <p class="form__introduction">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          </div>
+          <div class="form-container introduction-and-aim">
+            <fieldset class="form-mobile form__information information">
               <ul class="information__list list">
                 <li class="information__item">
                   <label for="name">Имя:<sup>*</sup></label>
@@ -51,7 +61,7 @@
               </ul>
             </fieldset>
             <fieldset class="form__aim aim">
-              <ul class="aim__list list">
+              <ul class="form-mobile aim__list list">
                 <li class="aim__item">
                   <label for="weight-loss">
                     <input type="radio" name="program" id="weight-loss" value="weight-loss" checked>
@@ -76,8 +86,8 @@
               </ul>
             </fieldset>
           </div>
-          <fieldset class="form__contacts contacts">
-            <legend class="contacts__title legend">Контактные данные (владельца кота)</legend>
+          <fieldset class="form-mobile form-container form__contacts contacts">
+            <legend class="contacts__title legend title-decoration title-decoration--smal"><span>Контактные данные (владельца кота)</span></legend>
             <ul class="contacts__list list">
               <li class="contacts__item">
                 <label for="email-name">E-mail:<sup>*</sup></label>
@@ -89,12 +99,12 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__comments comment">
-            <legend class="comment__title legend">Комментарий</legend>
+          <fieldset class="form-mobile form-container form__comments comment">
+            <legend class="comment__title legend title-decoration title-decoration-medium"><span>Комментарий</span></legend>
             <textarea class="comment__area" name="comments" rows="8">Расскажите обо всех повадках кота</textarea>
           </fieldset>
-          <fieldset class="form__extra extra">
-            <legend class="extra__title legend">Дополнительно</legend>
+          <fieldset class="form-mobile form-container form__extra extra">
+            <legend class="extra__title legend title-decoration title-decoration--big"><span>Дополнительно</span></legend>
             <ul class="extra__list list">
               <li class="extra__item">
                 <label for="sweetener">
@@ -126,17 +136,17 @@
               </li>
             </ul>
           </fieldset>
-          <div class="form__send send">
+          <div class="form-container form__send send">
             <input class="send__button button" type="submit" value="Отправить заявку">
             <span class="send__required">* — Обязательные поля</span>
           </div>
         </form>
       </div>
-      <section class="map">
+      <section class="map map--silver">
         <h2 class="visually-hidden">Описание местоположения</h2>
-        <div class="map_location location">
+        <div class="container-site map__location location">
           <p class="location__dealer">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="location__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="location__adress">ул. Большая Конюшенная, д. 19/8<br><br>Санкт-Петербург</p>
         </div>
         <picture>
             <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png">
@@ -146,7 +156,7 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
+      <div class="container-site page-footer__wrapper">
         <a class="page-footer__logo" href="index.html">
           <img src="img/logo-footer.svg" width="128" height="24" alt="Магазин «Кэт энерджи»">
         </a>

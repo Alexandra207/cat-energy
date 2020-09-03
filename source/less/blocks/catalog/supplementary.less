@@ -1,0 +1,110 @@
+.supplementary {
+  @media (min-width: @desktop-width) {
+    width: 896px;
+  }
+}
+
+.supplementary__item {
+  border-top: 1px solid @border-grey;
+  padding-top: 13px;
+  padding-bottom: 19px;
+
+  &:last-child {
+    border-bottom: 1px solid @border-grey;
+  }
+
+  @media (min-width: @tablet-width) {
+    border: 1px solid @border-grey;
+    border-top: none;
+    padding-top: 26px;
+    padding-bottom: 28px;
+    padding-right: 38px;
+    padding-left: 38px;
+
+    &:first-child {
+      border-top: 1px solid @border-grey;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    padding-right: 0;
+    padding-left: 0;
+    border-left: none;
+    border-right: none;
+  }
+}
+
+.supplementary__information {
+  border-collapse: collapse;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+
+    justify-content: space-between;
+    //display: grid;
+    //grid-template-columns: 2fr 1fr;
+  }
+
+  caption {
+    text-align: left;
+    text-transform: uppercase;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+
+    @media (min-width: @tablet-width) {
+      margin: 0;
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+  tr {
+    margin-top: 13px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+
+    @media (min-width: @tablet-width) {
+      justify-content: none;
+      margin: 0;
+      text-align: right;
+    }
+  }
+
+  td {
+    padding: 0;
+    color: @special-dark-grey;
+
+    @media (min-width: @tablet-width) {
+      font-size: 16px;
+      line-height: 20px;
+
+      &:first-child {
+        margin-right: 51px;
+
+        @media (min-width: @desktop-width) {
+          margin: 0;
+        }
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      margin: 0;
+    }
+  }
+}
+
+.supplementary__order {
+  @media (min-width: @tablet-width) {
+    margin-top: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
+}

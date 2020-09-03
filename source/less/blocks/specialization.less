@@ -1,21 +1,31 @@
 .specialization {
-  padding: 0 20px;
+  margin-bottom: 27px;
 
   @media (min-width: @tablet-width) {
-    padding: 0 30px;
+    margin-bottom: 45px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0;
-    max-width: 1220px;
-    margin: 0 auto;
     margin-top: 82px;
+    margin-bottom: 71px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
   }
 }
 
-.specialization__type {
+.specialization__type:first-child {
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 42px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.specialization__type:last-child {
+  margin-bottom: 0;
 }

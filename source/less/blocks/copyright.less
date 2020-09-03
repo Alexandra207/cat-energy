@@ -5,14 +5,14 @@
     padding: 0;
   }
 }
+
 .copyright__link {
-  display: block;
   color: @special-dark-grey;
   font-size: 16px;
   line-height: 18px;
   display: flex;
   justify-content: space-between;
-  vertical-align: center;
+  align-items: center;
 }
 
 .copyright__link span {
@@ -32,6 +32,11 @@
   width: 27px;
   height: 34px;
   fill: #666666;
+
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+    vertical-align: middle;
+  }
 
   &:hover,
   &:focus {

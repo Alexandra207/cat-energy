@@ -1,17 +1,56 @@
 .map {
-  @media (min-width: @desktop-width) {
-    position: relative;
-    z-index: 1;
-  }
-}
-.map img {
-  text-align: center;
-  @media (min-width: @tablet-width) {
-    width: 100%;
-    height: 396px;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 56px;
+    height: 52px;
+    background-image: url("../img/map-pin.png");
+    background-repeat: no-repeat;
+    //background-position: top center;
+    z-index: 9;
+    top: 253px;
+    left: 135px;
+
+    @media (min-width: @tablet-width) {
+      width: 113px;
+      height: 106px;
+      top: 346px;
+      left: 333px;
+    }
   }
 
   @media (min-width: @desktop-width) {
+    z-index: 1;
+  }
+
+  &--silver {
+    background-color: @basic-grey;
+
+    @media (min-width: @desktop-width) {
+      background-color: none;
+    }
+  }
+}
+
+.map img {
+  width: 320px;
+  height: 362px;
+  display: block;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+
+  @media (min-width: @tablet-width) {
     width: 100%;
+    height: 400px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1440px;
+    height: 400px;
   }
 }

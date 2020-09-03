@@ -1,0 +1,23 @@
+.page-background {
+  position: relative;
+
+  @media (min-width: @desktop-width) {
+    min-height: 696px;
+  }
+}
+
+.page-background::before {
+  @media (min-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 50%;
+    height: 696px;
+    background-size: auto 100%;
+    background-color: #64a83b;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+  }
+}
