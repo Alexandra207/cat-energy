@@ -20,6 +20,31 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 14px;
+  position: relative;
+
+  svg {
+    position: absolute;
+    display: block;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @media (min-width: @tablet-width) {
+      right: 20px;
+    }
+  }
+
+  &--phone svg {
+    right: 12px;
+
+    @media (min-width: @tablet-width) {
+      right: 16px;
+    }
+
+    @media (min-width: @tablet-width) {
+      right: 17px;
+    }
+  }
 }
 
 .contacts__item label {
