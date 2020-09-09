@@ -1,3 +1,15 @@
+.comment {
+  margin-bottom: 26px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 61px;
+  }
+}
+
 .comment__title {
   margin-bottom: 34px;
   padding: 0;
@@ -19,7 +31,6 @@
   border: 1px solid @input-form-grey;
   color: @special-dark-grey;
   resize: none;
-  //resize: inherit;
   min-height: 150px;
   text-align: center;
   padding: 0;
@@ -30,7 +41,9 @@
     text-align: left;
     padding-left: 19px;
     width: 100%;
-    //min-width: 631px;
+    font-size: 20px;
+    line-height: 30px;
+    min-height: 174px;
   }
 
   @media (min-width: @desktop-width) {

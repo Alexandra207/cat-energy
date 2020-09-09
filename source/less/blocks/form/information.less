@@ -5,45 +5,46 @@
 
 .information__item {
   display: flex;
-  flex-wrap: wrap;
   margin-bottom: 14px;
-  justify-content: baseline;
-  vertical-align: center;
+  align-items: center;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
 
   &:last-child {
     margin-bottom: 0;
   }
+
+  &--age label {
+    min-width: 94px;
+  }
 }
 
 .information__item label {
-  margin-right: 14px;
-  vertical-align: center;
-  padding-top: 14px;
+  margin-right: 15px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 10px;
-    padding-bottom: 12px;
+    margin-right: 19px;
   }
 }
 
 .information__item input {
+  margin: 0;
   flex-grow: 1;
   font: inherit;
   text-transform: uppercase;
   border: 1px solid @input-form-grey;
   outline: none;
   padding: 0;
-  padding-left: 16px;
-  padding-top: 13px;
-  padding-bottom: 14px;
+  padding-left: 15px;
+  padding-top: 14px;
+  padding-bottom: 10px;
 
   @media (min-width: @tablet-width) {
     padding-top: 10px;
     padding-bottom: 12px;
+    padding-left: 17px;
   }
 }
 

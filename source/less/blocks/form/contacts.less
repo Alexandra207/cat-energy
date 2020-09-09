@@ -1,10 +1,24 @@
+.contacts {
+  margin-bottom: 27px;
+  margin-top: 25px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 65px;
+    margin-top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 67px;
+  }
+}
+
 .contacts__title {
   margin-bottom: 32px;
   padding: 0;
 
   @media (min-width: @tablet-width) {
     width: auto;
-    margin-bottom: 76px;
+    margin-bottom: 75px;
   }
 }
 
@@ -19,8 +33,21 @@
 .contacts__item {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 14px;
+  align-items: center;
+  margin-bottom: 13px;
   position: relative;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
 
   svg {
     position: absolute;
@@ -31,6 +58,21 @@
 
     @media (min-width: @tablet-width) {
       right: 20px;
+    }
+  }
+
+  label {
+    margin-right: 12px;
+    color: @special-dark-grey;
+
+    @media (min-width: @tablet-width) {
+      margin-right: 19px;
+    }
+  }
+
+  &--phone label {
+    @media (min-width: @tablet-width) {
+      margin-right: 14px;
     }
   }
 
@@ -47,13 +89,6 @@
   }
 }
 
-.contacts__item label {
-  margin-right: 12px;
-  vertical-align: center;
-  padding-top: 12px;
-  color: @special-dark-grey;
-}
-
 .contacts__item input {
   flex-grow: 1;
   font: inherit;
@@ -63,7 +98,13 @@
   padding: 0;
   padding-left: 16px;
   padding-top: 13px;
-  padding-bottom: 14px;
+  padding-bottom: 13px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+  }
 }
 
 .contacts__item input[type="text"]::placeholder {

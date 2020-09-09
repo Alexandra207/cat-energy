@@ -1,9 +1,15 @@
 .social {
   padding-top: 20px;
-  padding-bottom: 21px;
+  padding-bottom: 16px;
 
   @media (min-width: @tablet-width) {
     padding: 0;
+    margin-left: 158px;
+    margin-right: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 413px;
   }
 }
 
@@ -17,4 +23,27 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+}
+
+.social__link {
+  svg {
+    fill: #666666;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--vkontakte svg {
+      width: 30px;
+      height: 22px;
+    }
+
+    &--instagram svg {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--facebook svg {
+      width: 28px;
+      height: 27px;
+    }
+  }
 }

@@ -15,12 +15,42 @@
 
   @media (min-width: @tablet-width) {
     justify-content: space-between;
-    margin-bottom: 64px;
+    margin-bottom: 56px;
   }
 
   @media (min-width: @desktop-width) {
     padding: 0;
-    margin-bottom: 74px;
+    margin-bottom: 0;
+  }
+
+  &--mobile {
+    @media (max-width: @mobile-width-only) {
+      border-bottom: 1px solid #ebebeb;
+    }
+  }
+
+  &--form {
+    @media (max-width: @mobile-width-only) {
+      padding-top: 14px;
+    }
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 70px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 87px;
+    }
+  }
+
+  &--catalog {
+    @media (min-width: @tablet-width) {
+      margin-bottom: 70px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 87px;
+    }
   }
 }
 

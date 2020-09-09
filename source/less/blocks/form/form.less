@@ -4,10 +4,16 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 82px;
   }
 }
 
@@ -15,7 +21,7 @@
   font-size: 14px;
   width: 226px;
   margin: 0;
-  margin-bottom: 39px;
+  margin-bottom: 38px;
 
   @media (min-width: @tablet-width) {
     width: 323px;
@@ -35,33 +41,18 @@
 }
 
 .form__aim {
-  margin-top: 27px;
-  margin-bottom: 26px;
+  margin-top: 26px;
   padding-top: 20px;
   padding-bottom: 22px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 72px;
-    margin-bottom: 71px;
-    padding-top: 25px;
-    padding-bottom: 0;
-    //padding-bottom: 25px;
+    margin-top: 71px;
+    padding-top: 21px;
+    margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
     margin: 0;
-  }
-}
-
-.form__comments {
-  margin-top: 27px;
-
-  @media (min-width: @tablet-width) {
-    margin-top: 71px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-top: 69px;
   }
 }
 
@@ -91,7 +82,7 @@
 }
 
 .form__send {
-  margin-top: 34px;
+  margin-top: 38px;
 
   @media (min-width: @tablet-width) {
     margin-top: 54px;

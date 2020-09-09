@@ -1,24 +1,22 @@
 .location {
   display: flex;
-  justify-content: space-between;
-  //display: grid;
-  //grid-template-columns: 1fr 1fr;
+  //justify-content: space-between;
   padding-top: 28px;
-  padding-bottom: 22px;
+  padding-bottom: 26px;
 
   @media (min-width: @tablet-width) {
     padding-top: 65px;
-    padding-bottom: 62px;
+    padding-bottom: 57px;
   }
 
   @media (min-width: @desktop-width) {
     width: 570px;
     background-color: @basic-white;
-    position: absolute;
+    position: relative;
     z-index: 6;
-    left: 50%;
-    transform: translateX(-610px);
-    top: 95px;
+    margin-left: 110px;
+    box-sizing: border-box;
+    padding-left: 76px;
   }
 }
 
@@ -31,15 +29,24 @@
 .location__dealer {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
   vertical-align: middle;
+  margin-right: 5px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
-    line-height: 21px;
+    line-height: 26px;
     width: 171px;
+    margin-right: 295px;
+    padding-left: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+    width: 163px;
+    margin-right: 87px;
   }
 }
 
@@ -50,6 +57,11 @@
     width: 159px;
     font-size: 16px;
     line-height: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
   }
 }
 

@@ -2,31 +2,32 @@
   background-color: @basic-grey;
 
   @media (min-width: @tablet-width) {
-
     padding-top: 55px;
     padding-bottom: 61px;
   }
 }
 
 .page-footer__wrapper {
-
   text-align: center;
 
   @media (min-width: @tablet-width) {
-
     display: flex;
-    justify-content: space-between;
-    vertical-align: center;
+    //vertical-align: middle;
+    align-items: center;
   }
 }
 
 .page-footer__logo {
   display: inline-block;
   padding-top: 39px;
-  padding-bottom: 32px;
+  padding-bottom: 27px;
 
   @media (min-width: @tablet-width) {
     padding: 0;
+  }
+
+  img {
+    height: 24px;
   }
 }
 

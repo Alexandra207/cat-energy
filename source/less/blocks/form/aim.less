@@ -12,6 +12,10 @@
   }
 }
 
+.aim__list {
+  list-style: none;
+}
+
 .aim__item {
   margin-bottom: 13px;
 }
@@ -33,12 +37,17 @@
   //margin-bottom: 18px;
   padding-left: 46px;
   user-select: none;
-  padding-top: 5px;
+  padding-top: 6px;
   padding-bottom: 5px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 60px;
+  }
 }
 
 .aim__radio {
   content: "";
+  box-sizing: border-box;
   position: absolute;
   margin-left: -46px;
   width: 28px;
@@ -51,6 +60,7 @@
   @media (min-width: @tablet-width) {
     width: 40px;
     height: 40px;
+    margin-left: -60px;
   }
 
   &::after {

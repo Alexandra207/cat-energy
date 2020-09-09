@@ -1,8 +1,15 @@
+.main-nav {
+  &--opened {
+    width: 100%;
+  }
+}
+
 .main-nav__toggle {
   margin: 0;
   padding: 0;
   position: absolute;
-  top: 23px;
+  //top: 23px;
+  top: 26px;
   right: 20px;
   z-index: 2;
   display: block;
@@ -35,6 +42,8 @@
 }
 
 .main-nav--opened .main-nav__toggle {
+  top: 20px;
+
   &::before,
   &::after {
     content: "";
@@ -58,8 +67,8 @@
 
 .main-nav--opened .main-nav__wrapper {
   @media (max-width: @mobile-width-only) {
-    margin-top: 16px;
-    width: 100vw;
+    margin-top: 13px;
+    width: 100%;
   }
 }
 
@@ -73,4 +82,10 @@
 
 .main-nav--nojs .main-nav__toggle {
   display: none;
+}
+
+.main-nav__wrapper {
+  @media (min-width: @desktop-width) {
+    width: 478px;
+  }
 }

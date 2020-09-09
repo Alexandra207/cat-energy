@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page">
-    <header class="container-site page-header">
+    <header class="container-site page-header page-header--mobile page-header--form">
         <a class="page-header__logo" href="index.html">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
@@ -27,8 +27,8 @@
             <li class="site-list__item">
               <a class="site-list__link"href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link">Подбор программы</a>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--active">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -40,11 +40,11 @@
           <h1 class="title heading-form">Подбор программы</h1>
         </div>
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="form-mobile">
+          <div class="form-mobile form-container">
             <p class="form__introduction">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           </div>
           <div class="form-container introduction-and-aim">
-            <fieldset class="form-mobile form__information information">
+            <div class="form-mobile form__information information">
               <ul class="information__list list">
                 <li class="information__item">
                   <label for="name">Имя:<sup>*</sup></label>
@@ -54,13 +54,13 @@
                   <label for="weight">Вес (кг):<sup>*</sup></label>
                   <input type="text" name="cat-weight" id="weight" placeholder="7" required>
                 </li>
-                <li class="information__item">
+                <li class="information__item information__item--age">
                   <label for="age">Возраст (лет):</label>
                   <input type="text" name="cat-age" id="age" placeholder="7">
                 </li>
               </ul>
-            </fieldset>
-            <fieldset class="form__aim aim">
+            </div>
+            <div class="form__aim aim">
               <ul class="form-mobile aim__list list">
                 <li class="aim__item">
                   <label for="weight-loss">
@@ -84,10 +84,10 @@
                   </label>
                 </li>
               </ul>
-            </fieldset>
+            </div>
           </div>
-          <fieldset class="form-mobile form-container form__contacts contacts">
-            <legend class="contacts__title legend title-decoration title-decoration--smal"><span>Контактные данные (владельца кота)</span></legend>
+          <div class="form-mobile form-container form__contacts contacts">
+            <h3 class="title contacts__title legend title-decoration title-decoration--smal"><span>Контактные данные (владельца кота)</span></h3>
             <ul class="contacts__list list">
               <li class="contacts__item contacts__item--mail">
                 <label for="email-name">E-mail:<sup>*</sup></label>
@@ -104,13 +104,13 @@
                 </svg>
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="form-mobile form-container form__comments comment">
-            <legend class="comment__title legend title-decoration title-decoration-medium"><span>Комментарий</span></legend>
-            <textarea class="comment__area" name="comments" rows="8">Расскажите обо всех повадках кота</textarea>
-          </fieldset>
-          <fieldset class="form-mobile form-container form__extra extra">
-            <legend class="extra__title legend title-decoration title-decoration--big"><span>Дополнительно</span></legend>
+          </div>
+          <div class="form-mobile form-container form__comments comment">
+            <h3 class="title comment__title legend title-decoration title-decoration--medium"><span>Комментарий</span></h3>
+            <textarea class="comment__area" name="comments">Расскажите обо всех повадках кота</textarea>
+          </div>
+          <div class="form-mobile form-container form__extra extra">
+            <h3 class="title extra__title legend title-decoration title-decoration--big"><span>Дополнительно</span></h3>
             <ul class="extra__list list">
               <li class="extra__item">
                 <label for="sweetener">
@@ -141,7 +141,7 @@
                 </label>
               </li>
             </ul>
-          </fieldset>
+          </div>
           <div class="form-container form__send send">
             <input class="send__button button" type="submit" value="Отправить заявку">
             <span class="send__required">* — Обязательные поля</span>
@@ -151,8 +151,8 @@
       <section class="map map--silver">
         <h2 class="visually-hidden">Описание местоположения</h2>
         <div class="container-site map__location location">
-          <p class="location__dealer">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="location__adress">ул. Большая Конюшенная, д. 19/8<br><br>Санкт-Петербург</p>
+          <p class="location__dealer">Приглашаем<br> к сотрудничеству дилеров!</p>
+          <p class="location__adress">ул. Большая Конюшенная, д. 19/8<br><br> Санкт-Петербург</p>
         </div>
         <picture>
             <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png">
@@ -184,7 +184,7 @@
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="#" aria-label="Facebook">
-                <svg role="img" width="10" height="18">
+                <svg role="img" width="22" height="22">
                   <use xlink:href="img/sprite.svg#icon-fb">
                 </svg>
               </a>

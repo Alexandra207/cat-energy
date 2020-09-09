@@ -25,9 +25,8 @@
 
   @media (min-width: @tablet-width) {
     padding-top: 77px;
-    padding-bottom: 53px;
+    padding-bottom: 57px;
     padding-left: 52px;
-    //padding-right: 309px;
   }
 }
 
@@ -35,9 +34,22 @@
   text-transform: uppercase;
   font-size: 24px;
   line-height: 37px;
-  text-align: center;
+  padding-left: 69px;
   margin-bottom: 29px;
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    text-align: left;
+    margin-bottom: 27px;
+    padding-left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 73px;
+    padding-left: 162px;
+  }
 
   &::before {
     content: "";
@@ -95,6 +107,26 @@
     }
   }
 
+  &--cat-go {
+    @media (min-width: @tablet-width) {
+      margin-bottom: 26px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 73px;
+    }
+  }
+
+  &--cat-go::before {
+    @media (min-width: @tablet-width) {
+      left: 397px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 0;
+    }
+  }
+
   &--cat-go::after {
     content: "";
     display: block;
@@ -120,18 +152,6 @@
       left: -19px;
     }
   }
-
-  @media (min-width: @tablet-width) {
-    font-size: 36px;
-    line-height: 36px;
-    text-align: left;
-    margin-bottom: 24px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-bottom: 73px;
-    text-align: center;
-  }
 }
 
 .food-programs__link {
@@ -143,6 +163,7 @@
   line-height: 16px;
   display: block;
   position: relative;
+  min-height: 24px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -171,7 +192,7 @@
     right: 135px;
 
     @media (min-width: @tablet-width) {
-      right: 491px;
+      right: 500px;
     }
 
     @media (min-width: @desktop-width) {
@@ -183,7 +204,7 @@
     right: 137px;
 
     @media (min-width: @tablet-width) {
-      right: 495px;
+      right: 503px;
     }
 
     @media (min-width: @desktop-width) {
@@ -195,13 +216,13 @@
 .food-programs__description {
   width: 227px;
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 39px;
 
   @media (min-width: @tablet-width) {
     width: auto;
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 48px;
+    margin-bottom: 50px;
 
     &--slim {
       width: 377px;
