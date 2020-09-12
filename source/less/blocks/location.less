@@ -1,6 +1,5 @@
 .location {
   display: flex;
-  //justify-content: space-between;
   padding-top: 28px;
   padding-bottom: 26px;
 
@@ -11,12 +10,14 @@
 
   @media (min-width: @desktop-width) {
     width: 570px;
+    margin: 0;
     background-color: @basic-white;
     position: relative;
     z-index: 6;
-    margin-left: 110px;
     box-sizing: border-box;
     padding-left: 76px;
+    left: 50%;
+    transform: translateX(-610px);
   }
 }
 

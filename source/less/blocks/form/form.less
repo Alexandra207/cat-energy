@@ -17,6 +17,61 @@
   }
 }
 
+.form__input {
+  margin: 0;
+  flex-grow: 1;
+  font: inherit;
+  text-transform: uppercase;
+  border: 2px solid @input-form-grey;
+  outline: none;
+  padding: 0;
+  padding-left: 15px;
+  padding-top: 14px;
+  padding-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 10px;
+    padding-bottom: 12px;
+    padding-left: 17px;
+  }
+
+  &--contacts {
+    padding-left: 16px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+
+    @media (min-width: @tablet-width) {
+      padding-bottom: 10px;
+      padding-left: 20px;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    border-color: @border-grey;
+    outline: 0;
+    outline-offset: 0;
+  }
+
+  &:active {
+    border-color: @special-dark-grey;
+    outline: 0;
+    outline-offset: 0;
+  }
+
+  &:active + svg {
+    fill: @basic-green;
+  }
+
+  &--error {
+    border-color: @input-error;
+  }
+
+  &--error + svg {
+    fill: @input-error;
+  }
+}
+
 .form__introduction {
   font-size: 14px;
   width: 226px;

@@ -2,15 +2,11 @@
   background-color: @basic-grey;
   color: @special-dark-grey;
   padding-top: 30px;
-  padding-bottom: 18px;
-  //padding-right: 33px;
+  padding-bottom: 13px;
   padding-left: 22px;
-  //padding-right: 279px;
   position: relative;
 
   @media (max-width: @mobile-width-only) {
-    //box-sizing: border-box;
-
     &::after {
       content: "";
       display: block;
@@ -19,7 +15,7 @@
       width: 240px;
       left: 20px;
       bottom: 57px;
-      background-color: #d9d9d9;
+      background-color: @special-grey-3;
     }
   }
 
@@ -232,7 +228,11 @@
   width: 24px;
   height: 12px;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-78%);
+
+  @media (min-width: @tablet-width) {
+    transform: translateY(-50%);
+  }
 
   &--slim-normal,
   &--slim-hover {
@@ -264,7 +264,7 @@
 .food-programs__description {
   width: 227px;
   margin: 0;
-  margin-bottom: 39px;
+  margin-bottom: 44px;
 
   @media (min-width: @tablet-width) {
     width: auto;

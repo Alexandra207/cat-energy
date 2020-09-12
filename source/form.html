@@ -48,15 +48,15 @@
               <ul class="information__list list">
                 <li class="information__item">
                   <label for="name">Имя:<sup>*</sup></label>
-                  <input type="text" name="cat-name" id="name" placeholder="Барсик" required>
+                  <input class="form__input" type="text" name="cat-name" id="name" placeholder="Барсик" required>
                 </li>
                 <li class="information__item">
                   <label for="weight">Вес (кг):<sup>*</sup></label>
-                  <input type="text" name="cat-weight" id="weight" placeholder="7" required>
+                  <input class="form__input" type="text" name="cat-weight" id="weight" placeholder="7" required>
                 </li>
                 <li class="information__item information__item--age">
                   <label for="age">Возраст (лет):</label>
-                  <input type="text" name="cat-age" id="age" placeholder="7">
+                  <input class="form__input" type="text" name="cat-age" id="age" placeholder="7">
                 </li>
               </ul>
             </div>
@@ -91,14 +91,14 @@
             <ul class="contacts__list list">
               <li class="contacts__item contacts__item--mail">
                 <label for="email-name">E-mail:<sup>*</sup></label>
-                <input type="email" placeholder="kuklachev@gmail.com" id="email-name" required>
+                <input class="form__input form__input--contacts" name="mail" type="email" placeholder="kuklachev@gmail.com" id="email-name" required>
                 <svg width="20" height="14">
                   <use xlink:href="img/sprite.svg#icon-mail">
                 </svg>
               </li>
               <li class="contacts__item contacts__item--phone">
                 <label id="tel-number">Телефон:<sup>*</sup></label>
-                <input type="tel" name="tel-owner" id="tel-number" placeholder="8 (960) 900-60-90" required>
+                <input class="form__input form__input--contacts" type="tel" name="tel-owner" id="tel-number" placeholder="8 (960) 900-60-90" required>
                 <svg width="20" height="20">
                   <use xlink:href="img/sprite.svg#icon-phone">
                 </svg>
@@ -154,11 +154,14 @@
           <p class="location__dealer">Приглашаем<br> к сотрудничеству дилеров!</p>
           <p class="location__adress">ул. Большая Конюшенная, д. 19/8<br><br> Санкт-Петербург</p>
         </div>
-        <picture>
+        <div class="map__interactive">
+          <picture>
             <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png">
             <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
             <img src="img/bg-map-mobile@1x.png" width="320" height="362" alt="Карта с месторасположением Cat Energy. ул. Большая Конюшенная, д. 19/8 Санкт-Петербур">
-        </picture>
+          </picture>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1599817477385!5m2!1sru!2sby" width="320" height="362" frameborder="0" allowfullscreen width="320" height="362" allowtransparency="true" title="Карта с месторасположением Cat Energy. ул. Большая Конюшенная, д. 19/8 Санкт-ПетербурКарта с месторасположением Cat Energy. ул. Большая Конюшенная, д. 19/8 Санкт-Петербур"></iframe>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
@@ -201,19 +204,7 @@
         </div>
       </div>
     </footer>
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-      navMain.classList.remove('main-nav--nojs');
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-    </script>
+    <script src="js/mobile.js"></script>
+    <script src="js/form.js"></script>
   </body>
 </html>

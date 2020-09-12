@@ -1,14 +1,15 @@
 .introduction {
-  //background-color: @basic-green;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  //background-position: top center;
   background-size: 100% auto;
   padding-top: 27px;
-  //padding-left: 20px;
-  //padding-right: 20px;
   margin-bottom: 22px;
   position: relative;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 100% auto;
+  }
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
@@ -79,8 +80,6 @@
 
 .introduction__form-link {
   display: block;
-  //width: 100%;
-  //margin: 0 auto;
   text-align: center;
   margin-top: 302px;
 
@@ -119,6 +118,5 @@
     top: -0;
     left: 448px;
     transform: translateX(0);
-    //transform: translate(177px);
   }
 }

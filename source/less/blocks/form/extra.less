@@ -58,6 +58,15 @@
   position: relative;
   display: block;
 
+  &:hover .extra__checkbox,
+  &:focus .extra__checkbox {
+    border: 1px solid @form-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet-width) {
     padding-left: 58px;
   }
@@ -69,7 +78,6 @@
 }
 
 .extra__checkbox {
-  content: "";
   position: absolute;
   width: 30px;
   height: 30px;

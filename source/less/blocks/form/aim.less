@@ -1,9 +1,9 @@
 .aim {
-  border-top: 1px solid #d9d9d9;
-  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid @special-grey-3;
+  border-bottom: 1px solid @special-grey-3;
 
   @media (min-width: @tablet-width) {
-    border: 1px solid #d9d9d9;
+    border: 1px solid @special-grey-3;
     padding-left: 28px;
   }
 
@@ -18,6 +18,15 @@
 
 .aim__item {
   margin-bottom: 13px;
+
+  &:hover .aim__radio,
+  &:focus .aim__radio {
+    border: 1px solid @form-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .aim__item:last-child {
@@ -27,7 +36,6 @@
 .aim__item input {
   position: absolute;
   appearance: none;
-
 }
 
 .aim__item label {
@@ -35,20 +43,10 @@
   cursor: pointer;
   color: @special-dark-grey-2;
   position: relative;
-  //margin-bottom: 18px;
   padding-left: 46px;
   user-select: none;
   padding-top: 6px;
   padding-bottom: 5px;
-
-  &:hover + .aim__radio,
-  &:focus + .aim__radio {
-    border: 1px solid red;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 
   @media (min-width: @tablet-width) {
     padding-left: 60px;
@@ -56,7 +54,6 @@
 }
 
 .aim__radio {
-  content: "";
   box-sizing: border-box;
   position: absolute;
   margin-left: -46px;
