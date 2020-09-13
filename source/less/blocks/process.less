@@ -1,49 +1,188 @@
 .process {
   color: @special-dark-grey;
-  padding: 0 20px;
+  margin-bottom: 42px;
 
   @media (min-width: @tablet-width) {
-    padding: 0 30px;
+    margin-bottom: 45px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0;
-    margin: auto;
-    max-width: 1220px;
+    border: none;
+    margin-bottom: 0;
   }
 }
 
-.process__title {
-  font-family: "Oswald", "Arial", sans-serif;
-  color: @basic-black;
-  margin: 0;
-  margin-top: 27px;
-  margin-bottom: 28px;
-  font-size: 36px;
-  line-height: 40px;
-  font-weight: 400;
-}
-
 .process__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  padding-left: 80px;
+  margin-top: 38px;
 
   @media (min-width: @tablet-width) {
+    margin-top: 32px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 230px 230px;
     grid-column-gap: 153px;
     grid-row-gap: 37px;
+    padding-left: 0;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 0;
+    grid-column-gap: 80px;
+    grid-row-gap: 0;
   }
 }
 
 .process__item {
+  display: block;
   margin: 0;
   margin-bottom: 20px;
-  width: 256px;
+  min-height: 60px;
+  position: relative;
+  vertical-align: middle;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding-bottom: 57px;
+    padding-top: 152px;
+
+    &--nutrients::after {
+      content: "1";
+      display: block;
+      position: absolute;
+      font-size: 280px;
+      line-height: 280px;
+      font-family: "Oswald", "Arial", sans-serif;
+      color: @basic-grey;
+      top: 0;
+      left: 118px;
+      z-index: 1;
+    }
+
+    &--powder::after {
+      content: "2";
+      display: block;
+      position: absolute;
+      font-size: 280px;
+      line-height: 280px;
+      font-family: "Oswald", "Arial", sans-serif;
+      color: @basic-grey;
+      top: 0;
+      left: 112px;
+      z-index: 1;
+    }
+
+    &--nutrition::after {
+      content: "3";
+      display: block;
+      position: absolute;
+      font-size: 280px;
+      line-height: 280px;
+      font-family: "Oswald", "Arial", sans-serif;
+      color: @basic-grey;
+      top: 0;
+      left: 115px;
+      z-index: 1;
+    }
+
+    &--changes::after {
+      content: "4";
+      display: block;
+      position: absolute;
+      font-size: 280px;
+      line-height: 280px;
+      font-family: "Oswald", "Arial", sans-serif;
+      color: @basic-grey;
+      top: 0;
+      left: 113px;
+      z-index: 1;
+    }
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: -80px;
+    width: 60px;
+    height: 60px;
+    background-color: @basic-green;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (min-width: @tablet-width) {
+      width: 80px;
+      height: 80px;
+      bottom: 161px;
+      left: 0;
+    }
+  }
+
+  &--nutrients::before {
+    background-image: url("../img/advantage-leaf@1x.png");
+  }
+
+  &--powder::before {
+    background-image: url("../img/advantage-powder@1x.png");
+  }
+
+  &--nutrition::before {
+    background-image: url("../img/advantage-dining@1x.png");
+  }
+
+  &--changes::before {
+    background-image: url("../img/advantage-clock@1x.png");
+  }
+}
+
+.process__item span {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    display: block;
+    font-family: "Oswald", "Arial", sans-serif;
+    color: @basic-grey;
+    top: 0;
+    left: 118px;
+    font-size: 280px;
+    line-height: 280px;
+  }
+}
+
+.process__text {
+  position: relative;
+  margin: 0;
+  z-index: 99;
+
+  &--changes br {
+    @media (max-width: @mobile-width-only) {
+      display: none;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+
+    &--nutrients {
+      width: 201px;
+    }
+
+    &--powder {
+      width: 227px;
+    }
+
+    &--nutrition {
+      width: 209px;
+    }
+
+    &--changes {
+      width: 245px;
+    }
+  }
 }

@@ -1,0 +1,75 @@
+.location {
+  display: flex;
+  padding-top: 28px;
+  padding-bottom: 26px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 65px;
+    padding-bottom: 57px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    margin: 0;
+    background-color: @basic-white;
+    position: relative;
+    z-index: 6;
+    box-sizing: border-box;
+    padding-left: 76px;
+    left: 50%;
+    transform: translateX(-610px);
+  }
+}
+
+.location__dealer,
+.location__adress {
+  margin: 0;
+  width: 140px;
+}
+
+.location__dealer {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  vertical-align: middle;
+  margin-right: 5px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 171px;
+    margin-right: 295px;
+    padding-left: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+    width: 163px;
+    margin-right: 87px;
+  }
+}
+
+.location__adress {
+  line-height: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 159px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+  }
+}
+
+.location__adress br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}

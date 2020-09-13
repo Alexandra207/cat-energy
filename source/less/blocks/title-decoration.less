@@ -1,0 +1,140 @@
+.title-decoration {
+  display: block;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100vw;
+    background-color: @basic-green;
+    left: 50%;
+    top: 63%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+    @media (min-width: @desktop-width) {
+      top: 70%;
+    }
+  }
+
+  span {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    background-color: @basic-white;
+    padding-right: 22px;
+
+    @media (min-width: @tablet-width) {
+      padding-right: 37px;
+      padding-left: 37px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-left: 0;
+      padding-right: 35px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 24px;
+      background-color: @basic-white;
+      top: 0;
+      left: -24px;
+
+      @media (min-width: @tablet-width) {
+        display: none;
+      }
+
+      @media (min-width: @desktop-width) {
+        display: block;
+        width: 35px;
+        left: -35px;
+      }
+    }
+  }
+
+  &--smal::before {
+    @media (max-width: @mobile-width-only) {
+      top: 35%;
+    }
+  }
+
+  &--smal span {
+    width: 186px;
+    padding-right: 15px;
+
+    &::before {
+      width: 15px;
+      left: -15px;
+    }
+
+    @media (min-width: @tablet-width) {
+      width: auto;
+      padding-right: 42px;
+      padding-left: 0;
+
+      &::before {
+        display: block;
+        width: 42px;
+        left: -42px;
+      }
+    }
+  }
+
+  &--medium span {
+    padding-right: 22px;
+
+    &::before {
+      width: 22px;
+      left: -22px;
+    }
+
+    @media (min-width: @tablet-width) {
+      padding-right: 38px;
+      padding-left: 0;
+
+      &::before {
+        display: block;
+        width: 38px;
+        left: -38px;
+      }
+    }
+  }
+
+  &--big span {
+    padding-right: 24px;
+
+    &::before {
+      width: 24px;
+      left: -24px;
+    }
+
+    @media (min-width: @tablet-width) {
+      padding-right: 41px;
+      padding-left: 0;
+
+      &::before {
+        display: block;
+        width: 41px;
+        left: -41px;
+      }
+    }
+  }
+
+  &--smal span,
+  &--medium span,
+  &--big span {
+    @media (min-width: @desktop-width) {
+      padding-right: 40px;
+    }
+
+    &::before {
+      display: block;
+      width: 40px;
+      left: -40px;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.information {
+  color: @special-dark-grey;
+}
+
+.information__item {
+  display: flex;
+  margin-bottom: 14px;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 18px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--age label {
+    min-width: 94px;
+  }
+}
+
+.information__item label {
+  margin-right: 15px;
+
+  &:hover,
+  &:focus {
+    border-color: @border-grey;
+    outline: 0;
+    outline-offset: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-right: 19px;
+  }
+}
+
+.information__item input[type="text"]::placeholder {
+  font: inherit;
+  color: @special-dark-grey;
+}

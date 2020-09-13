@@ -1,0 +1,106 @@
+.map {
+  position: relative;
+  z-index: 1;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 95px;
+    padding-bottom: 104px;
+  }
+
+  &--silver {
+    background-color: @basic-grey;
+
+    @media (min-width: @desktop-width) {
+      background-color: none;
+    }
+  }
+}
+
+.map__interactive {
+  position: relative;
+  margin: 0 auto;
+  width: 320px;
+  min-height: 362px;
+  z-index: 2;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    min-height: 400px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    min-height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 56px;
+    height: 52px;
+    background-image: url("../img/map-pin-mobile.png");
+    background-repeat: no-repeat;
+    z-index: 1;
+    top: 139px;
+    left: 51%;
+    transform: translate(-50%);
+
+    @media (min-width: @tablet-width) {
+      background-image: url("../img/map-pin.png");
+      width: 113px;
+      height: 106px;
+      top: 146px;
+      left: 49%;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 131px;
+      left: 66%;
+    }
+  }
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    z-index: 2;
+
+    @media (min-width: @tablet-width) {
+      width: 768px;
+      height: 400px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 1440px;
+      height: 400px;
+    }
+  }
+}
+
+.map img {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 320px;
+  height: 362px;
+  display: block;
+  text-align: center;
+  z-index: 0;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    height: 400px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    height: 400px;
+  }
+}

@@ -1,0 +1,122 @@
+.supplementary {
+  @media (min-width: @desktop-width) {
+    width: 896px;
+  }
+}
+
+.supplementary__item {
+  border-top: 1px solid @border-grey;
+  padding-top: 13px;
+  padding-bottom: 17px;
+
+  &:last-child {
+    border-bottom: 1px solid @border-grey;
+  }
+
+  @media (min-width: @tablet-width) {
+    border: 1px solid @border-grey;
+    border-top: none;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    padding-right: 38px;
+    padding-left: 38px;
+
+    &:first-child {
+      border-top: 1px solid @border-grey;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    padding-top: 16px;
+    padding-bottom: 17px;
+    padding-right: 0;
+    padding-left: 0;
+    border-left: none;
+    border-right: none;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.supplementary__heading {
+  text-transform: uppercase;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: @catalog-heading;
+  margin-bottom: 13px;
+  padding-left: 1px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 163px;
+    margin-right: 243px;
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 161px;
+    margin-right: 163px;
+  }
+}
+
+.supplementary__definition {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
+  }
+}
+
+.supplementary__information {
+  width: 100%;
+  margin-bottom: 15px;
+  line-height: 14px;
+  display: flex;
+
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 0;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  li:first-child {
+    @media (min-width: @tablet-width) {
+      margin-right: auto;
+      text-align: right;
+      width: 132px;
+    }
+
+    @media (min-width: @desktop-width) {
+      text-align: left;
+      width: 132px;
+      margin-right: 112px;
+    }
+  }
+}
+
+.supplementary__order {
+  @media (min-width: @tablet-width) {
+    margin-top: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
+}

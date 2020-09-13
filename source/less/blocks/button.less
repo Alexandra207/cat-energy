@@ -1,11 +1,11 @@
 .button {
+  display: block;
+  box-sizing: border-box;
   background-color: @basic-green;
   color: @basic-white;
-  width: 192px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  padding-right: 44px;
-  padding-left: 44px;
+  font-family: "Oswald", "Arial", sans-serif;
+  padding-top: 11px;
+  padding-bottom: 11px;
   text-transform: uppercase;
 
   &:hover,
@@ -19,11 +19,33 @@
   }
 
   @media (min-width: @tablet-width) {
-    width: 192px;
-    padding: 14px 26px;
+    padding: 10px;
+  }
+
+  &--introduction {
+    @media (min-width: 500px) {
+      background-color: @basic-grey;
+      color: @basic-black;
+    }
+
+    @media (min-width: @tablet-width) {
+      background-color: @basic-green;
+      color: @basic-white;
+      width: 242px;
+      padding: 18px 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 244px;
+      left: 5px;
+    }
   }
 
   &--silver {
+    font-size: 16px;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
     background-color: @basic-grey;
     color: @special-dark-grey;
 
@@ -35,6 +57,18 @@
     &:active {
       background-color: @special-grey-2;
       color: rgba(68, 68, 68, 0.3);
+    }
+  }
+
+  &--catalog {
+    text-align: center;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 16px;
+
+    @media (min-width: @desktop-width) {
+      width: 244px;
     }
   }
 }
