@@ -25,6 +25,7 @@ const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("styles.min.css"))
     .pipe(sourcemap.write("."))
@@ -132,11 +133,11 @@ const copy = () => {
 exports.copy = copy;
 
 const build = gulp.series(
-    clean,
-    copy,
-    styles,
-    sprite,
-    html
+  clean,
+  copy,
+  styles,
+  sprite,
+  html
 );
 exports.build = build;
 
