@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/style.css" as="style">
+    <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page">
     <div class="page-background">
@@ -43,9 +45,9 @@
               <h2 class="title introduction__title">Функциональное питание для котов</h2>
               <p class="introduction__slogan">Занялся собой? Займись котом!</p>
               <picture>
-                <source type="image/webp" media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.webp">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp">
-                <source type="image/webp" srcset="img/index-can-mobile@1x.webp">
+                <source type="image/webp" media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x ">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
                 <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
                 <img src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="271" alt="Пример с функциональным питанием для котов">
@@ -133,9 +135,9 @@
                       <source type="image/webp" media="(min-width: 1440px)" srcset="img/before-desktop@1x.webp">
                       <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp">
                       <source type="image/webp" srcset="img/before-mobile@1x.webp">
-                      <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png">
-                      <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
-                      <img class="example__big" src="img/before-mobile@1x.png" width="320" height="240" alt="Кот Борис до перехода на корм Cat Energy Slim">
+                      <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                      <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                      <img class="example__big" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Кот Борис до перехода на корм Cat Energy Slim">
                     </picture>
                   </div>
                   <div class="example__half">
@@ -143,9 +145,9 @@
                       <source type="image/webp" media="(min-width: 1440px)" srcset="img/after-desktop@1x.webp">
                       <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp">
                       <source type="image/webp" srcset="img/after-mobile@1x.webp">
-                      <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png">
-                      <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
-                      <img class="example__small" src="img/after-mobile@1x.png" width="311" height="322" alt="Кот Борис до перехода на корм Cat Energy Slim">
+                      <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                      <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                      <img class="example__small" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="311" height="322" alt="Кот Борис до перехода на корм Cat Energy Slim">
                     </picture>
                   </div>
                 </div>
