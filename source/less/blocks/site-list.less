@@ -3,7 +3,6 @@
     width: 440px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     position: relative;
   }
 
@@ -14,9 +13,9 @@
 
 .site-list__item {
   @media (min-width: @tablet-width) {
-    margin-right: 32px;
+    margin-right: 34px;
 
-    &:last-child {
+    &:nth-child(3n) {
       margin-right: 0;
     }
   }
@@ -51,7 +50,7 @@
     padding-right: 0;
     font-size: 18px;
     line-height: 24px;
-    padding-top: 42px;
+    padding-top: 18px;
     padding-bottom: 10px;
     font-weight: 400;
     border-top: none;
@@ -60,7 +59,7 @@
   @media (min-width: @desktop-width) {
     font-size: 20px;
     line-height: 30px;
-    padding-top: 69px;
+    padding-top: 16px;
     padding-bottom: 10px;
   }
 

@@ -46,20 +46,19 @@
     }
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
     border-color: @border-grey;
     outline: 0;
     outline-offset: 0;
   }
 
-  &:active {
+  &:focus {
     border-color: @special-dark-grey;
     outline: 0;
     outline-offset: 0;
   }
 
-  &:active + svg {
+  &:focus + svg {
     fill: @basic-green;
   }
 
