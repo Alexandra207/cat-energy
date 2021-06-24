@@ -1,60 +1,45 @@
-# Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# Cat Energy:  E-commerce/Online store of fitness food for cats
+[Figma Link](https://www.figma.com/file/ws6sa8haCV8GEdrVgp9Tn0/HTML-2-%2F-%D0%9A%D1%8D%D1%82-%D1%8D%D0%BD%D0%B5%D1%80%D0%B4%D0%B6%D0%B8-(21)))
 
-* Студент: [Alexandra Kuchynskaya](https://up.htmlacademy.ru/adaptive/20/user/146257).
-* Наставник: [Сергей Зубов](https://htmlacademy.ru/profile/serj).
+[Published site]() 
 
----
+"Cat Energy" is is a responsive website, coded in vanilla HTML, CSS and then built with Gulp. Moreover, SASS preprocessor was used to automate repetitive tasks and to reduce the number of errors and code bloat. There are mobile, tablet and desktop versions, styled with flexboxes and grids.
 
-**Обратите внимание, что папка с вашими исходными файлами — `source/`.**
+Good practices in terms of accessibility, SEO, performance:
+- Images optimizations: svg sprite, compressed .png and .jpg. .webp if the format is supported by a browser;
+- Adaptive and retina images for displays with high resolution. 
+- The website can be fully navigated with the 'Tab' button;
+- Minification of the code (HTML and CSS)
 
-Полезный файл:
 
-- [Contributing.md](Contributing.md) — руководство по внесению изменений.
+To run a project locally from your computer, follow these steps:
+Code -> SSH -> copy
 
-_Не удаляйте и не обращайте внимание на файлы:_<br>
-_`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`, `package-lock.json`, `package.json`._
+in consol/terminal:
+- git clone paste SSH
+- npm i
+- npm start
 
----
-
-### Памятка
-
-#### 1. Зарегистрируйтесь на Гитхабе
-
-Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
-
-#### 2. Создайте форк
-
-[Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/146257-cat-energy-20) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
-
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808133-3a7ace00-a190-11e9-9d29-401b02036a9c.jpg">
-
-Получится вот так:
-
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808135-3a7ace00-a190-11e9-9a8d-7390b3784c65.jpg">
-
-#### 3. Клонируйте репозиторий на свой компьютер
-
-Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии. Также обратите внимание, что клонировать репозиторий нужно через SSH, а не через HTTPS. Нажмите зелёную кнопку в правой части экрана, чтобы скопировать SSH-адрес вашего репозитория:
-
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808136-3a7ace00-a190-11e9-884f-24621e62b29a.jpg">
-
-Клонировать репозиторий можно так:
-
-```
-git clone SSH-адрес_вашего_форка
-```
-
-Команда клонирует репозиторий на ваш компьютер и подготовит всё необходимое для старта работы.
-
-#### 4. Начинайте обучение!
 
 ---
 
-<a href="https://htmlacademy.ru/intensive/adaptive"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/adaptive/logo-for-github-2.png"></a>
+[Ссылка на макет в Figma](https://www.figma.com/file/ws6sa8haCV8GEdrVgp9Tn0/HTML-2-%2F-%D0%9A%D1%8D%D1%82-%D1%8D%D0%BD%D0%B5%D1%80%D0%B4%D0%B6%D0%B8-(21))
 
-Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS, уровень 2](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
+[Опубликованный сайт]() 
 
-[travis-image]: https://travis-ci.com/htmlacademy-adaptive/146257-cat-energy-20.svg?branch=master
-[travis-url]: https://travis-ci.com/htmlacademy-adaptive/146257-cat-energy-20
-[dependency-image]: https://david-dm.org/htmlacademy-adaptive/146257-cat-energy-20/dev-status.svg?style=flat-square
-[dependency-url]: https://david-dm.org/htmlacademy-adaptive/146257-cat-energy-20?type=dev
+Cat Energy: Интернет-магазин фитнес-еды для котиков
+
+"Cat Energy" – адаптивный сайт, созданный при помощи ванильного HTML, CSS. Собран с помощью Gulp. Для автоматизации повторяющихся задач и уменьшения количества ошибок и раздувания кода был использован препроцессор Less. По части именования классов, использовалась методология БЭМ. Веб-сайт адаптируется к нескольким видам устройства: mobile, tablet, desktop. Чтобы добиться этой адаптивности, были применены флексбоксы b grid-сетки. Доступно 3 версии: мобильная, планшетная и десктопнаяю
+
+Хорошие практики с точки зрения доступности, SEO, производительности:
+
+- Оптимизация изображений: svg-спрайт, сжатие .png и .jpg, использование формата .webp, если поддерживается браузером.
+- Адаптивная и ретиновая графика для дисплеев с высокой плотностью пикселей.
+- Минификация кода (html, css).
+
+Чтобы запустить проект локально на вашем компьютере, выполните следующие шаги:
+Code -> SSH -> копировать
+в консоле/терминале:
+- git clone скопированный SSH
+- npm i
+- npm start
