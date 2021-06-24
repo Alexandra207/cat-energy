@@ -18,7 +18,10 @@ var deploy = require('gulp-gh-pages');
 
 gulp.task('deploy', function () {
   return gulp.src("./source/**/*")
-    .pipe(deploy())
+    .pipe(deploy({
+      remoteUrl: "https://github.com/Alexandra207/Alexandra207.github.io.git",
+      branch: "master"
+    }))
 });
 
 // Styles
