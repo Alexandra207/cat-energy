@@ -14,6 +14,12 @@ const del = require("del");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 const htmlmin = require('gulp-htmlmin');
+var deploy = require('gulp-gh-pages');
+
+gulp.task('deploy', function () {
+  return gulp.src("./source/**/*")
+    .pipe(deploy())
+});
 
 // Styles
 

@@ -1,5 +1,5 @@
 # Cat Energy:  E-commerce/Online store of fitness food for cats
-[Figma Link](https://www.figma.com/file/ws6sa8haCV8GEdrVgp9Tn0/HTML-2-%2F-%D0%9A%D1%8D%D1%82-%D1%8D%D0%BD%D0%B5%D1%80%D0%B4%D0%B6%D0%B8-(21)))
+[Figma Link](https://www.figma.com/file/ws6sa8haCV8GEdrVgp9Tn0/HTML-2-%2F-%D0%9A%D1%8D%D1%82-%D1%8D%D0%BD%D0%B5%D1%80%D0%B4%D0%B6%D0%B8-(21))
 
 [Published site]() 
 
