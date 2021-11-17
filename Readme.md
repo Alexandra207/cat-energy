@@ -1,7 +1,7 @@
 # Cat Energy:  E-commerce/Online store of fitness food for cats
 [Figma Link](https://www.figma.com/file/ws6sa8haCV8GEdrVgp9Tn0/HTML-2-%2F-%D0%9A%D1%8D%D1%82-%D1%8D%D0%BD%D0%B5%D1%80%D0%B4%D0%B6%D0%B8-(21))
 
-[Published site](https://alexandra207.github.io/cat-energy/) 
+[Published site](https://AlexKuchinskaya.github.io/cat-energy/) 
 
 "Cat Energy" is is a responsive website, coded in vanilla HTML, CSS and then built with Gulp. Moreover, SASS preprocessor was used to automate repetitive tasks and to reduce the number of errors and code bloat. There are mobile, tablet and desktop versions, styled with flexboxes and grids.
 
@@ -25,7 +25,7 @@ in consol/terminal:
 
 [Ссылка на макет в Figma](https://www.figma.com/file/ws6sa8haCV8GEdrVgp9Tn0/HTML-2-%2F-%D0%9A%D1%8D%D1%82-%D1%8D%D0%BD%D0%B5%D1%80%D0%B4%D0%B6%D0%B8-(21))
 
-[Опубликованный сайт](https://alexandra207.github.io/cat-energy/) 
+[Опубликованный сайт](https://AlexKuchinskaya.github.io/cat-energy/) 
 
 Cat Energy: Интернет-магазин фитнес-еды для котиков
 
